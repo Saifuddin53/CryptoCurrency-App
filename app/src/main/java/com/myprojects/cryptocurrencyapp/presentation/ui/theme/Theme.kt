@@ -1,4 +1,4 @@
-package com.myprojects.cryptocurrencyapp.ui.theme
+package com.myprojects.cryptocurrencyapp.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

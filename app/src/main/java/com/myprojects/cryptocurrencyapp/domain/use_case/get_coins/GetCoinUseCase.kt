@@ -11,7 +11,7 @@ import java.io.IOException
 import javax.inject.Inject
 
 class GetCoinUseCase @Inject constructor(
-    val coinRepository: CoinRepository
+    private val coinRepository: CoinRepository
 ) {
     operator fun invoke(): Flow<Resource<List<Coin>>> = flow {
         try {

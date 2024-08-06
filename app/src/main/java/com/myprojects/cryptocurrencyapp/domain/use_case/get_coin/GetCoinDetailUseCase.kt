@@ -13,7 +13,7 @@ import java.io.IOException
 import javax.inject.Inject
 
 class GetCoinDetailUseCase @Inject constructor(
-    val coinRepository: CoinRepository
+    private val coinRepository: CoinRepository
 ) {
     operator fun invoke(coinId: String): Flow<Resource<CoinDetail>> = flow {
         try {
